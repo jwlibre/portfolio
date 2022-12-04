@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="assets/fontawesome/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">	
+	<title>Porftolio</title>
+	<script type="module" src="./index.js"></script>
+</head>
+<section id="loading-screen">
+	<video class="center" width="320" height="240" autoplay muted loop>
+		<!-- <source src="vid/loading_vid.mp4" type="video/mp4"> -->
+	</video>
+	<div id="loading-percentage"></div>
+</section>
+<body>
+	<div id="navigation">
+		<nav class="top-menu">
+			<ul>
+				<!-- <li>
+				<img id="navbar-logo" src="./img/logo2.svg" alt="">
+				</li> -->
+				<li>
+				<a class="default" id="home" href="#">home</button>
+				</li>
+				<li>
+				<a class="default" id="music" href="#">music</a>
+				</li>
+				<li>
+				<a class="default" id="portfolio" href="#">portfolio</a>
+				</li>
+				<li>
+				<a class="default" id="cv" href="#">cv</a>
+				</li>
+				<li>
+				<a class="default" id="videos" href="#">videos</a>
+				</li>
+				<li>
+				<a class="default" id="credits" href="#">credits</a>
+				</li>
+				<li>
+					<div class="language-select-box">
+						<a class="default" id="en" href="#">en</a>
+						<a class="default" id="fr" href="#">fr</a>
+				</div>
+				</li>
+				<!-- <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown link
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				</li> -->
+			</ul>
+		</nav>
+	</div>
+	<canvas id="canvas"></canvas>
+	  <nav class="bottom-menu" id="footer">
+			<ul>
+				<li class="icon">
+				<a class="default" href="https://www.linkedin.com/in/jeremy-libre-8a682a84/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin nav-link"></i></a>
+				</li>
+				<li class="icon">
+				<a class="default" href="https://www.instagram.com/jwlibre/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram nav-link"></i></a>
+				</li>
+				<li class="icon">
+				<a class="default" href="https://github.com/jwlibre" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github nav-link"></i></a>
+				</li>
+				<li class="icon">
+				<a class="default" href="https://www.youtube.com/@jlibredrums4119" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube nav-link"></i></a>
+				</li>
+				<li class="icon">
+				<a class="default" href="https://www.artstation.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-artstation nav-link"></i></a>
+				</li>
+				<li class="nav-item icon">
+				<a class="default" href="mailto:jw.libre@hotmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope nav-link"></i></a>
+				</li>
+			</ul>
+	  </nav>
+	  <video id="VHS_SF_BlowingSmoke" class="video" muted style="display: none;">
+		<source src="./vid/SF_BlowingSmoke_video.mp4" type="video/mp4">
+	  </video>
+	  <video id="VHS_AB_Pricks" class="video" muted style="display: none;">
+		<source src="./vid/SF_BlowingSmoke_video.mp4" type="video/mp4">
+	  </video>
+	  <video id="VHS_SF_Live" class="video" muted style="display: none;">
+		<source src="./vid/SF_Live_video.mp4" type="video/mp4">
+	  </video>
+	  <video id="VHS_AB_RatVMole" class="video" muted style="display: none;">
+		<source src="./vid/SF_BlowingSmoke_video.mp4" type="video/mp4">
+	  </video>
+	  <video id="VHS_Saosin" class="video" muted style="display: none;">
+		<source src="./vid/Saosin_video.mp4" type="video/mp4">
+	  </video>
+	  <audio id="VHS_SF_BlowingSmoke_audio" class="audio_vhs">
+		<source src="./audio/SF_BlowingSmoke_video_audio.m4a">
+	  </audio>
+	  <audio id="VHS_AB_Pricks_audio" class="audio_vhs">
+		<source src="./audio/SF_BlowingSmoke_video_audio.m4a">
+	  </audio>
+	  <audio id="VHS_SF_Live_audio" class="audio_vhs">
+		<source src="./audio/SF_Live_video_audio.m4a">
+	  </audio>
+	  <audio id="VHS_AB_RatVMole_audio" class="audio_vhs">
+		<source src="./audio/SF_BlowingSmoke_video_audio.m4a">
+	  </audio>
+	  <audio id="VHS_Saosin_audio" class="audio_vhs">
+		<source src="./audio/Saosin_video_audio.m4a">
+	  </audio>
+</body>
+</html>
